@@ -4,19 +4,16 @@
 \alias{reveal}
 \title{reveal the bits of a double}
 \usage{
-reveal(x)
+reveal(...)
 }
 \arguments{
-\item{x}{a double}
+\item{\dots}{several expression that should each evaluate to a single double}
 }
 \description{
 reveal the bits of a double
 }
 \examples{
-reveal( 1.0 )
-reveal( 0.0 )
-reveal( -0.0 )
-reveal( NA )
-reveal( NaN )
+reveal( 1.0, 0.0, -0.0 )
+reveal( NA, NaN )
 
 }
