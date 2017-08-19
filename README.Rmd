@@ -40,30 +40,13 @@ devtools::install_github( "ThinkRstat/seven31" )
   - the 11 following bits are the exponent
   - the remaining 52 bits are the fraction
 
-`reveal` 🔍 the binary representation of a number
-
-```{r}
-seven31::reveal( 0 )
-seven31::reveal( -0 )
-seven31::reveal( pi )
-seven31::reveal( NA )
-seven31::reveal( NaN )
-```
-
-On a 🖍 compatible environment, you get colors: 
+`reveal` 🔍 the binary representation of a number. On a 🖍 compatible environment, you get colors: 
 
 ![](img/reveal.png)
 
 ## Compare two numbers
 
-`compare` shows the differences. 
-
-```{r}
-seven31::compare( 2, sqrt(2)^2 )
-seven31::compare( 0.3 + 0.6, 0.9 )
-```
-
-On 🖍 compatible environments, the bits that differ between the two numbers
+`compare` shows the differences. On 🖍 compatible environments, the bits that differ between the two numbers
 are highlighted with 🔴 background. 
 
 ![](img/compare.png)

@@ -32,39 +32,13 @@ Show the bits of one number
 -   the 11 following bits are the exponent
 -   the remaining 52 bits are the fraction
 
-`reveal` 🔍 the binary representation of a number
-
-``` r
-seven31::reveal( 0 )
-#> 0 00000000000 (-1023) 0000000000000000000000000000000000000000000000000000
-seven31::reveal( -0 )
-#> 1 00000000000 (-1023) 0000000000000000000000000000000000000000000000000000
-seven31::reveal( pi )
-#> 0 10000000000 (    1) 1001001000011111101101010100010001000010110100011000
-seven31::reveal( NA )
-#> 0 11111111111 ( 1024) 0000000000000000000000000000000000000000011110100010
-seven31::reveal( NaN )
-#> 0 11111111111 ( 1024) 1000000000000000000000000000000000000000000000000000
-```
-
-On a 🖍 compatible environment, you get colors:
+`reveal` 🔍 the binary representation of a number. On a 🖍 compatible environment, you get colors:
 
 ![](img/reveal.png)
 
 Compare two numbers
 -------------------
 
-`compare` shows the differences.
-
-``` r
-seven31::compare( 2, sqrt(2)^2 )
-#> 0 10000000000 (    1) 0000000000000000000000000000000000000000000000000000 : 2         
-#> 0 10000000000 (    1) 0000000000000000000000000000000000000000000000000001 : sqrt(2)^2
-seven31::compare( 0.3 + 0.6, 0.9 )
-#> 0 01111111110 (   -1) 1100110011001100110011001100110011001100110011001100 : 0.3 + 0.6 
-#> 0 01111111110 (   -1) 1100110011001100110011001100110011001100110011001101 : 0.9
-```
-
-On 🖍 compatible environments, the bits that differ between the two numbers are highlighted with 🔴 background.
+`compare` shows the differences. On 🖍 compatible environments, the bits that differ between the two numbers are highlighted with 🔴 background.
 
 ![](img/compare.png)
