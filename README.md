@@ -12,7 +12,11 @@ sqrt(2)^2 == 2
 #> [1] FALSE
 ```
 
-This [wikipedia article](https://en.wikipedia.org/wiki/Double-precision_floating-point_format) is a good introduction to the Double-precision floating-point format.
+This [wikipedia article](https://en.wikipedia.org/wiki/Double-precision_floating-point_format) is a good introduction to the Double-precision floating-point format, but in short `double` (what we call `numeric` in R) are encoded in 64 bits:
+
+-   the first bit is the sign bit
+-   the 11 following bits are the exponent
+-   the remaining 52 bits are the fraction
 
 Installation
 ------------
@@ -26,13 +30,7 @@ devtools::install_github( "ThinkRstat/seven31" )
 Show the bits of one number
 ---------------------------
 
-`double` (what we call `numeric` in R) are encoded in 64 bits:
-
--   the first bit is the sign bit
--   the 11 following bits are the exponent
--   the remaining 52 bits are the fraction
-
-`reveal` 🔍 the binary representation of a number. On a 🖍 compatible environment, you get colors:
+`reveal` 🔍 the binary representation of numbers. It takes a variadic number of arguments and shows their representation with some [‼️](http://rlang.tidyverse.org) magic. On a 🖍 compatible environment, you get a nice colored output:
 
 ![](img/reveal.png)
 
