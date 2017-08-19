@@ -9,6 +9,7 @@ Encoding: UTF-8
 LazyData: true
 Imports: crayon,
     Rcpp,
-    glue
+    glue,
+    rlang
 LinkingTo: Rcpp
 RoxygenNote: 6.0.1.9000
