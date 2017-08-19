@@ -27,10 +27,10 @@ From github:
 devtools::install_github( "ThinkRstat/seven31" )
 ```
 
-Show the bits of one number
----------------------------
+ShReveal the bits`reveal` 🔍 the binary representation of numbers. It takes a variadic number of arguments
+---------------------------------------------------------------------------------------------------------
 
-`reveal` 🔍 the binary representation of numbers. It takes a variadic number of arguments and shows their representation with some [‼️](http://rlang.tidyverse.org) magic. On a 🖍 compatible environment, you get a nice colored output:
+and shows their representation with some [‼️](http://rlang.tidyverse.org) magic. On a 🖍 compatible environment, you get a nice colored output:
 
 ![](img/reveal.png)
 
