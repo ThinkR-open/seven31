@@ -24,7 +24,7 @@ Installation
 From github:
 
 ``` r
-devtools::install_github( "ThinkRstat/seven31" )
+devtools::install_github( "ThinkR-open/seven31" )
 ```
 
 Reveal the bits
