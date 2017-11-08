@@ -35,7 +35,7 @@ is a good introduction to the Double-precision floating-point format, but in sho
 From github: 
 
 ```R
-devtools::install_github( "ThinkRstat/seven31" )
+devtools::install_github( "ThinkR-open/seven31" )
 ```
 
 ## Reveal the bits
