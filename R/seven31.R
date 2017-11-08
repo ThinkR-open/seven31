@@ -47,20 +47,21 @@ print.seven31_double_list <- function(x, ...){
 
 #' @importFrom crayon bgBlack make_style
 style_exponent_value <- function(exponent){
-
-
-  if(exponent == 1024){
-    bgBlack$white( " NaN ")
-  } else if( exponent == -1023){
-    bgBlack$white(" zero")
-  } else if( exponent == 0) {
-    make_style( "green3", bg = TRUE)(sprintf( "% 5d", exponent))
-  } else if( exponent > 0) {
-    make_style( "orange", bg = TRUE)(sprintf( "% 5d", exponent))
-  } else {
-    make_style( "tomato", bg = TRUE)(sprintf( "% 5d", exponent))
-  }
+  exponent
 }
+# style_exponent_value <- function(exponent){
+#   if(exponent == 1024){
+#     bgBlack$white( " NaN ")
+#   } else if( exponent == -1023){
+#     bgBlack$white(" zero")
+#   } else if( exponent == 0) {
+#     make_style( "green3", bg = TRUE)(sprintf( "% 5d", exponent))
+#   } else if( exponent > 0) {
+#     make_style( "orange", bg = TRUE)(sprintf( "% 5d", exponent))
+#   } else {
+#     make_style( "tomato", bg = TRUE)(sprintf( "% 5d", exponent))
+#   }
+# }
 
 #' @importFrom glue glue
 #' @importFrom crayon red blue make_style underline style
@@ -71,7 +72,7 @@ print.seven31_double <- function(x, ...){
   s <- glue( "{sign} {exponent} ({value}) {fraction} : {name}",
     sign = red(x$sign),
     exponent = blue(x$exponent),
-    value = style_exponent_value( x$exponent_value ),
+    value = style_exponent_value(x$exponent_value) ,
     fraction = paste( ifelse( strsplit(x$fraction, "")[[1]] == "1", "1", discreet( "0" ) ), collapse = "" ),
     name = x$name
   )
