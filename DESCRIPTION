@@ -1,7 +1,7 @@
 Package: seven31
 Title: Visual clue about R FAQ 7.31
 Version: 0.7.31
-Authors@R: person("Romain", "François", email = "romain@thinkr.fr", role = c("aut", "cre"))
+Authors@R: person("Romain", "François", email = "romain@rstudio.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-2444-4226"))
 Description: Visual clue about R FAQ 7.31.
 Depends: R (>= 3.4.0)
 License: MIT + file LICENSE
