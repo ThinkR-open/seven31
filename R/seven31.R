@@ -28,10 +28,10 @@ reveal_one <- function(x, name){
 #'
 #' @export
 #' @importFrom purrr map2 map_chr
-#' @importFrom rlang quos UQS
+#' @importFrom rlang quos list2
 reveal <- function( ... ){
   qnames <- map_chr(quos(...), quo_name)
-  values <- list(...)
+  values <- list2(...)
   structure(
     map2( values, qnames, reveal_one ),
     class = "seven31_double_list"
