@@ -1,3 +1,2 @@
-#' @useDynLib seven31
-#' @importFrom Rcpp sourceCpp
+#' @useDynLib seven31, .registration = TRUE
 NULL

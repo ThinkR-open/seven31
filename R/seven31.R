@@ -1,6 +1,7 @@
 
 reveal_one <- function(x, name){
-  bits  <- substr( as.character( rev( intToBits( parts(x) ) ) ), 2, 2 )
+  parts <- .Call(`seven31_parts`, x)
+  bits  <- substr( as.character( rev( intToBits( parts ) ) ), 2, 2 )
 
   exponent <- paste( bits[2:12], collapse = "" )
   exponent_value <- strtoi( exponent, base = "2") - 1023

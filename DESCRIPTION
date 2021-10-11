@@ -1,16 +1,16 @@
 Package: seven31
 Title: Visual clue about R FAQ 7.31
 Version: 0.7.31
-Authors@R: person("Romain", "François", email = "romain@thinkr.fr", role = c("aut", "cre"))
+Authors@R: c(
+  person("Romain", "François", email = "romain@thinkr.fr", role = c("aut", "cre"))
+  )
 Description: Visual clue about R FAQ 7.31.
 Depends: R (>= 3.4.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: crayon,
-    Rcpp,
     glue,
     rlang,
     purrr
-LinkingTo: Rcpp
-RoxygenNote: 6.0.1.9000
+RoxygenNote: 7.1.2
